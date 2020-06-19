@@ -68,29 +68,11 @@ Internet connection is required, with wireless WIFI connection see <a href="http
 ```
 # # Start the system with lastest Arch Linux installation media
 # loadkeys [keymap]
-# curl https://raw.githubusercontent.com/picodotdev/alis/master/download.sh | bash, or with URL shortener curl -sL https://bit.ly/2F3CATp | bash
+# curl https://raw.githubusercontent.com/thehari08/alis/master/download.sh | bash
 # # Edit alis.conf and change variables values with your preferences
 # vim alis.conf
 # # Start
 # ./alis.sh
-```
-
-### Installation with asciinema vídeo
-
-As another form of log.
-
-```
-# # Start the system with lastest Arch Linux installation media
-# loadkeys [keymap]
-# curl https://raw.githubusercontent.com/picodotdev/alis/master/download.sh | bash, or with URL shortener curl -sL https://bit.ly/2F3CATp | bash
-# ./alis-asciinema.sh
-# # Edit alis.conf and change variables values with your preferences
-# vim alis.conf
-# Start
-# ./alis.sh
-# # Exit
-# exit
-# ./alis-reboot.sh
 ```
 
 ### Recovery
@@ -100,42 +82,11 @@ Boot from the latest <a href="https://www.archlinux.org/download/">original Arch
 ```
 # # Start the system with lastest Arch Linux installation media
 # loadkeys [keymap]
-# curl https://raw.githubusercontent.com/picodotdev/alis/master/download.sh | bash, or with URL shortener curl -sL https://bit.ly/2F3CATp | bash
+# curl https://raw.githubusercontent.com/thehari08/alis/master/download.sh | bash
 # # Edit alis-recovery.conf and change variables values with your last installation with alis
 # vim alis-recovery.conf
-# # Optional asciinema video
-# ./alis-asciinema-recovery.sh
 # # Start
 # ./alis-recovery.sh
-```
-
-### How you can help
-
-* Test in VirtualBox and create an issue if something does not work, attach the main parts of the used configuration file and the error message
-* Create issues with new features
-* Send pull requests
-* Share it in social networks, forums, create a blog post or video about it
-
-### Test in VirtuaBox with Packer
-
-VirtualBox and [Packer](https://packer.io/) are required.
-
-* Firmware: efi, bios
-* File system: ext4, btrfs, f2fs, xfs
-* Partition: luks, lvm
-* Bootloader: grub, refind, systemd
-* Desktop environment: gnome, kde, xfce, ...
-
-
-```
-$ curl https://raw.githubusercontent.com/picodotdev/alis/master/download-packer.sh | bash
-
-$ ./alis-packer.sh -c alis-packer-efi-btrfs-luks-lvm-systemd.json
-$ ./alis-packer.sh -c alis-packer-efi-ext4-grub-gnome.json
-$ ./alis-packer.sh -c alis-packer-efi-ext4-grub-kde.json
-$ ./alis-packer.sh -c alis-packer-efi-ext4-grub-xfce.json
-$ ./alis-packer.sh -c alis-packer-efi-ext4-luks-lvm-grub.json
-$ ./alis-packer.sh -c alis-packer-efi-f2fs-luks-lvm-systemd.json
 ```
 
 ### Video

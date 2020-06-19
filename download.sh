@@ -15,20 +15,16 @@ rm -f alis-recovery.sh
 rm -f alis-recovery-asciinema.sh
 rm -f alis-recovery-reboot.sh
 
-wget https://raw.githubusercontent.com/picodotdev/alis/master/alis.conf
-wget https://raw.githubusercontent.com/picodotdev/alis/master/alis.sh
-wget https://raw.githubusercontent.com/picodotdev/alis/master/alis-asciinema.sh
-wget https://raw.githubusercontent.com/picodotdev/alis/master/alis-reboot.sh
+wget https://raw.githubusercontent.com/thehari08/alis/master/alis.conf
+wget https://raw.githubusercontent.com/thehari08/alis/master/alis.sh
+wget https://raw.githubusercontent.com/thehari08/alis/master/alis-reboot.sh
 
-wget https://raw.githubusercontent.com/picodotdev/alis/master/alis-recovery.conf
-wget https://raw.githubusercontent.com/picodotdev/alis/master/alis-recovery.sh
-wget https://raw.githubusercontent.com/picodotdev/alis/master/alis-recovery-asciinema.sh
-wget https://raw.githubusercontent.com/picodotdev/alis/master/alis-recovery-reboot.sh
+wget https://raw.githubusercontent.com/thehari08/alis/master/alis-recovery.conf
+wget https://raw.githubusercontent.com/thehari08/alis/master/alis-recovery.sh
+wget https://raw.githubusercontent.com/thehari08/alis/master/alis-recovery-reboot.sh
 
 chmod +x alis.sh
-chmod +x alis-asciinema.sh
 chmod +x alis-reboot.sh
 
 chmod +x alis-recovery.sh
-chmod +x alis-recovery-asciinema.sh
 chmod +x alis-recovery-reboot.sh
