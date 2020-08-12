@@ -1011,7 +1011,7 @@ function bootloader_systemd() {
 
     cat <<EOT > "/mnt$ESP_DIRECTORY/loader/loader.conf"
 # alis
-timeout 5
+timeout 0
 default archlinux
 editor 0
 EOT
